@@ -382,7 +382,7 @@ const Home: React.FC = () => {
                   <Input name="phone" placeholder="Celular" icon={FiPhone} />
                   <div className="question">
                     <VscDebugBreakpointDataUnverified />
-                    <h2>Qual o seu patrimônio investido hoje?</h2>
+                    <h2>Qual valor de patrimônio almeja constituir?</h2>
                   </div>
                   <select
                     name="sel-patrimony"

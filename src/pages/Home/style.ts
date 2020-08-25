@@ -115,7 +115,7 @@ export const Container = styled.main`
         height: 80%;
         align-items: center;
         justify-content: center;
-
+        margin: 1rem;
         h1 {
           text-align: center;
           text-decoration: underline;
