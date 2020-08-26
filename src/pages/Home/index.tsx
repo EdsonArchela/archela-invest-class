@@ -7,6 +7,7 @@ import { Facebook, Telegram, Whatsapp } from 'react-social-sharing';
 import { useMediaQuery } from 'react-responsive';
 import * as Yup from 'yup';
 
+import { Redirect } from 'react-router-dom';
 import getValidationErrors from '../../utils/getValidationErrors';
 import { Container, ContainerMobile } from './style';
 import Input from '../../components/Input';
@@ -39,7 +40,6 @@ const Home: React.FC = () => {
   const [outros, setOutros] = useState(false);
   const [vouInvestir, setVouInvestir] = useState(false);
   const { addToast } = useToast();
-
   const isMobile = useMediaQuery({ query: '(max-width: 800px)' });
   const isTablet = useMediaQuery({ query: '(max-width: 1224px)' });
 
@@ -88,6 +88,7 @@ const Home: React.FC = () => {
               'Sua Aula será dia 15 de Agosto às 20:30h. Não esqueça de compartilhar.',
           });
         });
+        window.location.assign('http://archelainvest.com.br');
       } catch (error) {
         if (error instanceof Yup.ValidationError) {
           const errors = getValidationErrors(error);
