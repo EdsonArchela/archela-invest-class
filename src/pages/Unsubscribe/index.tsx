@@ -19,7 +19,7 @@ const Unsubscribe: React.FC = () => {
   useEffect(() => {
     try {
       const [, id] = window.location.search.split('=');
-      api.post('/class/unsubscribe', id);
+      api.patch(`/class/unsubscribe/${id}`);
     } catch (err) {
       addToast({
         type: 'error',
