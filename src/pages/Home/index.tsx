@@ -11,7 +11,7 @@ import getValidationErrors from '../../utils/getValidationErrors';
 import { Container, ContainerMobile } from './style';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
-import LogoImg from '../../assets/archela-investment-class-logo.svg';
+import LogoImg from '../../assets/archela-investment-class-logo.png';
 import { useToast } from '../../hooks/ToastContext';
 import api from '../../services/api';
 
@@ -343,7 +343,7 @@ const Home: React.FC = () => {
                   />
                   <div className="bar" />
                 </div>
-                <p className="data">15 de Agosto - 20:30</p>
+                <p className="data">15 de Setembro - 20:30</p>
                 <p className="price">ONLINE E GRATUITO</p>
                 <p className="description">
                   Pretende iniciar no mercado financeiro? Não deixe de
