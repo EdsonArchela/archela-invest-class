@@ -160,24 +160,24 @@ const Home: React.FC = () => {
                     <Facebook
                       solid
                       small
-                      link="http://http://class.archelainvest.com.br"
+                      link="https://class.archelainvest.com.br"
                     />
                     <Telegram
                       solid
                       small
-                      link="http://class.archelainvest.com.br"
+                      link="https://class.archelainvest.com.br"
                     />
                     <Whatsapp
                       solid
                       small
-                      link="http://class.archelainvest.com.br"
+                      link="https://class.archelainvest.com.br"
                     />
                   </>
                 ) : (
                   <>
-                    <Facebook link="http://class.archelainvest.com.br" />
-                    <Telegram link="http://class.archelainvest.com.br" />
-                    <Whatsapp link="http://class.archelainvest.com.br" />
+                    <Facebook link="https://class.archelainvest.com.br" />
+                    <Telegram link="https://class.archelainvest.com.br" />
+                    <Whatsapp link="https://class.archelainvest.com.br" />
                   </>
                 )}
               </div>
