@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import * as qs from 'qs';
 import { Container } from './style';
 import LogoImg from '../../assets/archela-investment-class-logo.png';
 import api from '../../services/api';

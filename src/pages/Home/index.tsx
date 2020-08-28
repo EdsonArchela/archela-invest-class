@@ -7,7 +7,6 @@ import { Facebook, Telegram, Whatsapp } from 'react-social-sharing';
 import { useMediaQuery } from 'react-responsive';
 import * as Yup from 'yup';
 
-import { Redirect } from 'react-router-dom';
 import getValidationErrors from '../../utils/getValidationErrors';
 import { Container, ContainerMobile } from './style';
 import Input from '../../components/Input';
@@ -39,9 +38,17 @@ const Home: React.FC = () => {
   const [commodities, setCommodities] = useState(false);
   const [outros, setOutros] = useState(false);
   const [vouInvestir, setVouInvestir] = useState(false);
+  const [phone, setPhone] = useState('');
   const { addToast } = useToast();
   const isMobile = useMediaQuery({ query: '(max-width: 800px)' });
   const isTablet = useMediaQuery({ query: '(max-width: 1224px)' });
+
+  const phoneMask = (value: string): string => {
+    return value
+      .replace(/\D/g, '')
+      .replace(/^(\d{2})(\d)/g, '($1) $2')
+      .replace(/(\d)(\d{4})$/, '$1-$2');
+  };
 
   const handleSubmit = useCallback(
     async (data: FormData) => {
@@ -54,8 +61,8 @@ const Home: React.FC = () => {
             .required('E-mail obrigatório')
             .email('Digite um e-mail válido'),
           phone: Yup.string()
-            .min(10)
-            .max(11)
+            .min(13)
+            .max(14)
             .required('Use um telefone válido'),
         });
 
@@ -380,7 +387,15 @@ const Home: React.FC = () => {
                   <h1>Cadastre hoje - Não perca esta oportunidade!</h1>
                   <Input name="name" placeholder="Nome" icon={FiUser} />
                   <Input name="email" placeholder="E-mail" icon={FiMail} />
-                  <Input name="phone" placeholder="Celular" icon={FiPhone} />
+                  <Input
+                    name="phone"
+                    placeholder="Celular"
+                    icon={FiPhone}
+                    value={phone}
+                    onChange={event => {
+                      setPhone(phoneMask(event.target.value));
+                    }}
+                  />
                   <div className="question">
                     <VscDebugBreakpointDataUnverified />
                     <h2>Qual valor de patrimônio almeja constituir?</h2>
