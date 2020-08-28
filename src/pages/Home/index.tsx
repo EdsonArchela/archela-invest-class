@@ -61,8 +61,8 @@ const Home: React.FC = () => {
             .required('E-mail obrigatório')
             .email('Digite um e-mail válido'),
           phone: Yup.string()
-            .min(13)
-            .max(14)
+            .min(14)
+            .max(15)
             .required('Use um telefone válido'),
         });
 
