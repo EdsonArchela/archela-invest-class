@@ -153,7 +153,7 @@ const Home: React.FC = () => {
               <li>Previdência</li>
             </ul>
             <div className="share">
-              <h2>Compartilhe</h2>
+              <h2>Inscreva-se já</h2>
               <div className="share-buttons">
                 {isTablet ? (
                   <>
@@ -368,15 +368,27 @@ const Home: React.FC = () => {
                   <div className="share-buttons">
                     {isTablet ? (
                       <>
-                        <Facebook solid small link="archelainvest.com.br" />
-                        <Telegram solid small link="archelainvest.com.br" />
-                        <Whatsapp solid small link="archelainvest.com.br" />
+                        <Facebook
+                          solid
+                          small
+                          link="class.archelainvest.com.br"
+                        />
+                        <Telegram
+                          solid
+                          small
+                          link="class.archelainvest.com.br"
+                        />
+                        <Whatsapp
+                          solid
+                          small
+                          link="class.archelainvest.com.br"
+                        />
                       </>
                     ) : (
                       <>
-                        <Facebook link="archelainvest.com.br" />
-                        <Telegram link="archelainvest.com.br" />
-                        <Whatsapp link="archelainvest.com.br" />
+                        <Facebook link="class.archelainvest.com.br" />
+                        <Telegram link="class.archelainvest.com.br" />
+                        <Whatsapp link="class.archelainvest.com.br" />
                       </>
                     )}
                   </div>
