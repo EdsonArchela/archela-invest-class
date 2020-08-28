@@ -157,15 +157,27 @@ const Home: React.FC = () => {
               <div className="share-buttons">
                 {isTablet ? (
                   <>
-                    <Facebook solid small link="archelainvest.com.br" />
-                    <Telegram solid small link="archelainvest.com.br" />
-                    <Whatsapp solid small link="archelainvest.com.br" />
+                    <Facebook
+                      solid
+                      small
+                      link="http://http://class.archelainvest.com.br"
+                    />
+                    <Telegram
+                      solid
+                      small
+                      link="http://class.archelainvest.com.br"
+                    />
+                    <Whatsapp
+                      solid
+                      small
+                      link="http://class.archelainvest.com.br"
+                    />
                   </>
                 ) : (
                   <>
-                    <Facebook link="archelainvest.com.br" />
-                    <Telegram link="archelainvest.com.br" />
-                    <Whatsapp link="archelainvest.com.br" />
+                    <Facebook link="http://class.archelainvest.com.br" />
+                    <Telegram link="http://class.archelainvest.com.br" />
+                    <Whatsapp link="http://class.archelainvest.com.br" />
                   </>
                 )}
               </div>
