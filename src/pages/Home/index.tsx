@@ -60,10 +60,7 @@ const Home: React.FC = () => {
           email: Yup.string()
             .required('E-mail obrigatório')
             .email('Digite um e-mail válido'),
-          phone: Yup.string()
-            .min(14)
-            .max(15)
-            .required('Use um telefone válido'),
+          phone: Yup.string().required('Use um telefone válido'),
         });
 
         await schema.validate(data, {
