@@ -89,7 +89,7 @@ const Home: React.FC = () => {
             type: 'success',
             title: 'Cadastro realizado com sucesso!',
             description:
-              'Sua Aula será dia 15 de Agosto às 20:30h. Não esqueça de compartilhar.',
+              'Sua Aula será dia 15 de Setembro às 20:30h. Não esqueça de compartilhar.',
           });
         });
         window.location.assign('http://archelainvest.com.br');
@@ -137,7 +137,7 @@ const Home: React.FC = () => {
               />
               <div className="bar" />
             </div>
-            <p className="data">15 de Agosto - 20:30</p>
+            <p className="data">15 de Setembro - 20:30</p>
             <p className="price">ONLINE E GRATUITO</p>
             <p className="description">
               Pretende iniciar no mercado financeiro? Não deixe de participar
